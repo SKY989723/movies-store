@@ -1,10 +1,22 @@
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './Card';
 import './index.css';
-import Sdata from "./Sdata";
+import App from './App';
+
+ReactDOM.render(
+  <>
+<App/>
+  </>,
+  document.getElementById("root")
+);
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import Card from './Card';
+// import './index.css';
+// import Sdata from "./Sdata";
 // console.log(Sdata[0]);
 
 
@@ -21,8 +33,8 @@ import Sdata from "./Sdata";
 // )
 // }
 
-ReactDOM.render(<>
-<h1 className='heading_style'>Top 5 Netflix movies in 2023</h1>
+// ReactDOM.render(<>
+// <h1 className='heading_style'>Top 5 Netflix movies in 2023</h1>
 {/* <Card 
 imgsrc={Sdata[0].imgsrc}
   sname={Sdata[0].sname}
@@ -32,17 +44,18 @@ imgsrc={Sdata[0].imgsrc}
 
 {/* {Sdata.map(ncard)} */}
 
-{Sdata.map((val)=>{
+{/* {Sdata.map((val)=>{
   console.log(val);
 return (
   <Card 
+  key={val.id}
 imgsrc={val.imgsrc}
   sname={val.sname}
   title={val.title}
   link={val.link}
 />
 )
-})}
+})} */}
 
 {/* <Card 
 imgsrc={Sdata[1].imgsrc}
@@ -67,7 +80,7 @@ imgsrc={Sdata[2].imgsrc}
   link={Sdata[0].link}
 /> */}
 
-</>,document.getElementById('root'));
+// </>,document.getElementById('root'));
 
 
 // fet arrow function
